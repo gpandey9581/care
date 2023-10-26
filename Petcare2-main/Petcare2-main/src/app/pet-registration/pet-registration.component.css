@@ -1,0 +1,21 @@
+.card{
+    margin: 6%;
+    opacity: 0.9;
+}
+
+#btnRegistration{
+    float: right;
+    width: 120px;
+    margin-right: 20px;
+}
+.row{
+    margin-top: 10px;
+}
+#msg{
+    border-radius: 10px;
+    height: 60px;
+    text-align: center;
+    margin-top: -50px;
+    color: white;
+    font-family: cursive;
+}

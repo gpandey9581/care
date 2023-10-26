@@ -1,0 +1,35 @@
+#body {
+  width: 1280px; /* Set the width of the div */
+  height: 600px; /* Set the height of the div */
+  background-image: url('../assets/Background.jpg'); /* Replace 'your-image-url.jpg' with your image file's URL */
+  background-size: cover; /* Adjust the image size to cover the entire div */
+  background-repeat: no-repeat; /* Prevent the image from repeating */
+  background-position:center; /* Center the image within the div */
+}
+
+.header
+{
+    height: 75px;
+    background-color: blueviolet;
+    border: 1px solid #ccc;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+#login{
+    float: right;
+    padding: 10px;
+    width: 101px;
+    margin-right: 20px;
+}
+  
+  .content {
+    flex: 1; /* Takes up available space */
+    padding: 10px;
+  }
+  
+  .button {
+    padding: 10px;
+    width: 101px;
+    margin-right: 20px;
+  }

@@ -1,0 +1,43 @@
+<div class="container">
+  <div class="row">
+    <div class="form-group">
+      <label style="max-width: 100px;">Search</label>
+      <input class="form-control"  [(ngModel)]="searchTerm" type="text" style="max-width: 200px;">
+    </div>
+
+    <div class="card" style="margin-top: 10px;">
+      <div class="card-header">
+        <h4>List of Pets</h4>
+      </div>
+      <div class="card-body">
+        <table class="table">
+          <thead>
+            <tr>
+              <th>Species</th>
+              <th>Name</th>
+              <th>Age</th>
+              <th>Image</th>
+              <th>Owner Name</th>
+              <th>Owner Phone Number</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr *ngFor="let pet of pets |PetFilter:searchTerm">
+              <td>{{ pet.species }}</td>
+              <td>{{ pet.name }}</td>
+              <td>{{ pet.age }}</td>
+              <td>{{ pet.image }}</td>
+              <td>{{ pet.ownername }}</td>
+              <td>{{ pet.ownerphoneNumber }}</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+    </div>
+  </div>
+</div>
+
+
+
+
+  
